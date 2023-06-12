@@ -7,7 +7,7 @@ Jordan Shaw
 
 <http://jordanshaw.com> 
 
-During the workshop, participants can follow along with an example project. If they would like, they can experiment and test capturing training data, cleaning their data, and training a model within the example project’s dashboard. Following this, they can visualize their model predictions with p5.js using a particle system sketch.
+During the workshop, participants can follow along with an example project. If they would like, they can experiment and test capturing training data (PoseNet), cleaning their data, and training a model (Tensorflow.js RNN LSTM) within the example project’s dashboard. Following this, they can visualize their model predictions with p5.js using a particle system sketch.
 
 If participants wish to follow along and experiment with the example project, the technical  requirements are recommended:
 
