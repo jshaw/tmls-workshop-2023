@@ -7,6 +7,8 @@ Jordan Shaw
 
 <http://jordanshaw.com> 
 
+Accompaning Google Slides are viewable [here](#TODO)
+
 During the workshop, participants can follow along with an example project. If they would like, they can experiment and test capturing training data (PoseNet), cleaning their data, and training a model (Tensorflow.js RNN LSTM) within the example project’s dashboard. Following this, they can visualize their model predictions with p5.js using a particle system sketch.
 
 If participants wish to follow along and experiment with the example project, the technical  requirements are recommended:
@@ -16,8 +18,19 @@ If participants wish to follow along and experiment with the example project, th
 - Have [Visual Studio Code](https://code.visualstudio.com/) installed on your computer
 - Have the [Live Server VSCode Extention](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) added to your IDE 
 
+Before the workshop run `npm install` from within both the `codeAndTrainModel` and `predictNewPoses` directories.
+
 Participants are also welcome to attend and follow along in a non-technical way. In this case, there are no prerequisites required beforehand. 
 
+### Running the project
+
+- To run the `dashboard` and `p5ParticleSketch` which is based on p5.js, run the VS Code Live Server Extension and go to your localhost:PORT
+- To run `codeAndTrainModel` and `predictNewPoses` enter the directory and install dependencies `tfjs-node` and `pubnub` by running `npm install`. Than you can execute `node index.js` in either directory. 
+- Ensure to update the following variables to unique string values so you don't interfere with other data channels.
+ - in `dashboard/sketch.js` update the `channelName` and `aiChannelName` to unique values
+ - in `p5ParticleSketch/sketch.js` update `aiChannelName` the same string used for the variable in the dashboard directory.
+ - in `predictNewPoses/index.js` update `aiChannelName` the same string used for the same variable names above.
+- Update file path to the model directory in `predictNewPoses/index.js` to your systems path to the model files. 
 
 ### Workshop Overview
 
